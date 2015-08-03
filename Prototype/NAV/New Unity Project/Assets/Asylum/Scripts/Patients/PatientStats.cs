@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 
 [System.Serializable]
 public enum TreatmentState {
@@ -77,7 +79,7 @@ public class PatientStats {
 	public Patient MyPatient;
 	public string Description;							// used to describe the patient in its profile
 	public TreatmentState MyTreatmentState = TreatmentState.None;
-	private BehaviourState currentState = BehaviourState.Passive;
+	public BehaviourState currentState = BehaviourState.Passive;
 	public List<Stat> theStats = new List<Stat>();		// a list of its stats, designed for dynamic stats as opposed to static
 
 	public PatientStats()
@@ -393,7 +395,6 @@ public class PatientStats {
 		case BehaviourState.Dead:
 
 			//dead
-			
 			break;
 		}
 
