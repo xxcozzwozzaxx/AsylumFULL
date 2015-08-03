@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class ItemData {
+public class ItemsData {
 	public string Name;
 	public string ToolTip;
 	public int Amount;
 };
 
 public class InventoryManager : MonoBehaviour {
-	public List<ItemData> MyItemDatas;
+	public List<ItemsData> MyItemDatas;
 	public List<Texture2D> MyItemTextures;
 	public Texture2D DefaultItemTexture;
 	public GameObject ItemPrefab;

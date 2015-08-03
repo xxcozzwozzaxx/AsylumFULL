@@ -63,7 +63,7 @@ public class FSM : MonoBehaviour
 			break;
 		case State.Hallucinating:
 			
-			
+		
 			
 			break;
 		case State.Medicated:

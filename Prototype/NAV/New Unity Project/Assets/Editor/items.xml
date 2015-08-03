@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ItemCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <ItemData PNAME="Sally">
+      <PDESCRIPTION>She can see dead people...</PDESCRIPTION>
+      <OSSTAT>3</OSSTAT>
+      <ASTAT>5</ASTAT>
+      <HALLSTAT>8</HALLSTAT>
+      <PHSTAT>4</PHSTAT>
+      <HUNSTAT>6</HUNSTAT>
+      <FSTAT>8</FSTAT>
+      <PICON>patient_sally</PICON>
+      <PMESH>patientMesh_sally</PMESH>
+    </ItemData>
+    <ItemData PNAME="Stiles">
+      <PDESCRIPTION>Aggressive alcoholic</PDESCRIPTION>
+      <OSSTAT>4</OSSTAT>
+      <ASTAT>8</ASTAT>
+      <HALLSTAT>4</HALLSTAT>
+      <PHSTAT>2</PHSTAT>
+      <HUNSTAT>4</HUNSTAT>
+      <FSTAT>5</FSTAT>
+      <PICON>patient_stiles</PICON>
+      <PMESH>patientMesh_Stiles</PMESH>
+    </ItemData>
+    <ItemData PNAME="Michelle">
+      <PDESCRIPTION>so many stars!!!</PDESCRIPTION>
+      <OSSTAT>2</OSSTAT>
+      <ASTAT>3</ASTAT>
+      <HALLSTAT>2</HALLSTAT>
+      <PHSTAT>7</PHSTAT>
+      <HUNSTAT>9</HUNSTAT>
+      <FSTAT>3</FSTAT>
+      <PICON>NONE</PICON>
+      <PMESH>patientMesh_Michelle</PMESH>
+    </ItemData>
+    <ItemData PNAME="Andrew Harris">
+      <PDESCRIPTION>Lover not a fighter	</PDESCRIPTION>
+      <OSSTAT>9000</OSSTAT>
+      <ASTAT>3</ASTAT>
+      <HALLSTAT>9000</HALLSTAT>
+      <PHSTAT>5</PHSTAT>
+      <HUNSTAT>9</HUNSTAT>
+      <FSTAT>65</FSTAT>
+      <PICON>meme</PICON>
+      <PMESH>hot guy #1</PMESH>
+    </ItemData>
+  </Items>
+</ItemCollection>

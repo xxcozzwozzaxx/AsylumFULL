@@ -58,6 +58,13 @@
      <Compile Include="Assets\Asylum\Scripts\Gui\NewBehaviourScript.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\PatientGuiManager.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\UpdateTime.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Core\DlgManager.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Core\Josscript.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Core\JosscriptGameKeys.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Scripts\Arrows.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Scripts\DlgGUI.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Scripts\Interact.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Josscript\Scripts\setKey.cs" />
      <Compile Include="Assets\Asylum\Scripts\Management\EventsManager.cs" />
      <Compile Include="Assets\Asylum\Scripts\Management\GaurdManager.cs" />
      <Compile Include="Assets\Asylum\Scripts\Management\PatientManager.cs" />
@@ -67,6 +74,10 @@
      <Compile Include="Assets\Asylum\Scripts\Patients\PatientGenerator.cs" />
      <Compile Include="Assets\Asylum\Scripts\Patients\PatientStats.cs" />
      <Compile Include="Assets\Asylum\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Asylum\Scripts\ToolScripts\CharacterHandler.cs" />
+     <Compile Include="Assets\Asylum\Scripts\ToolScripts\Item.cs" />
+     <Compile Include="Assets\Asylum\Scripts\ToolScripts\ItemContainer.cs" />
+     <Compile Include="Assets\Asylum\Scripts\ToolScripts\ItemData.cs" />
      <Compile Include="Assets\Asylum\Scripts\Utilities\Billboard.cs" />
      <Compile Include="Assets\Asylum\Scripts\Utilities\GetManager.cs" />
      <Compile Include="Assets\Asylum\Scripts\Utilities\GuiLookAtCamera.cs" />
@@ -100,7 +111,9 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Editor\items.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Asylum\Resources\Tutorial.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
@@ -142,10 +155,12 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Asylum\Resources\Goddess.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Asylum\Resources\InGame.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
