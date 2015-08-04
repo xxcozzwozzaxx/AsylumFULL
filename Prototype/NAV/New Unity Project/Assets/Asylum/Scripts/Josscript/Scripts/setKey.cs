@@ -11,16 +11,21 @@ public class setKey : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
-	void OnMouseDown()
+	void OnMouseDown() 
+	{
+		DoTheThing ();
+		enabled = false;
+	}
+	public void DoTheThing()
 	{
 		//DlgManager.GameKeys.Seti ("tutKey", tutVal);
 		Camera.main.gameObject.BroadcastMessage("StartDialogue", tutVal);
+		
 		if(ArrowTex != null)
 			ArrowTex.enabled = false;
 	}

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 // A different state will be stored per guard
 // at the end of each turn (2mins) the functions related will activate
@@ -184,6 +185,7 @@ public class TurnManager : MonoBehaviour {
 			SelectedGuard = null;	// set targetted patient to nothing
 		}
 	}
+	public UnityAction OnSelectPatientFunction;
 
 	public void SelectPatient (GameObject NewSelectedPatient) 
 	{
@@ -202,6 +204,7 @@ public class TurnManager : MonoBehaviour {
 			MyPatientGuiManager.GetComponent<PatientGuiManager> ().UpdatePatient (SelectedPatient);
 			IsPatientSelected = true;
 		}
+		OnSelectPatientFunction.Invoke ();
 		//UnSelectGuard();
 	}
 	public void UnSelectPatient () 

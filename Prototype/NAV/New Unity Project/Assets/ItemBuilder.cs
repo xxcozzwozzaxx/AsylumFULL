@@ -44,9 +44,9 @@ public class ItemBuilder : EditorWindow
 						Debug.Log (obj.PHSTAT);
 						Debug.Log (obj.HUNSTAT);
 						Debug.Log (obj.FSTAT);
-			
+
 						ItemData tempItem = new ItemData ();
-						
+								
 						tempItem.PNAME = obj.PNAME;
 						tempItem.PDESCRIPTION = obj.PDESCRIPTION;
 						tempItem.OSSTAT = obj.OSSTAT;
@@ -57,6 +57,15 @@ public class ItemBuilder : EditorWindow
 						tempItem.FSTAT = obj.FSTAT;
 						tempItem.PICON = obj.PICON;
 						tempItem.PMESH = obj.PMESH;
+
+						GetManager.GetPatientManager().AddPatient(obj.PNAME,
+			                                          obj.PDESCRIPTION,
+			                                          obj.OSSTAT,
+			                                          obj.ASTAT,
+			                                          obj.HALLSTAT,
+			                                          obj.PHSTAT,
+			                                          obj.HUNSTAT,
+			                                          obj.FSTAT);
 
 
 						patients.Add (tempItem);

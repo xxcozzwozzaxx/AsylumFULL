@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ItemCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <ItemData PNAME="Sally">
+      <PDESCRIPTION>She can see dead people...</PDESCRIPTION>
+      <OSSTAT>3</OSSTAT>
+      <ASTAT>5</ASTAT>
+      <HALLSTAT>8</HALLSTAT>
+      <PHSTAT>4</PHSTAT>
+      <HUNSTAT>6</HUNSTAT>
+      <FSTAT>8</FSTAT>
+      <PICON>patient_sally</PICON>
+      <PMESH>patientMesh_sally</PMESH>
+    </ItemData>
+    <ItemData PNAME="Patient Name">
+      <PDESCRIPTION>Patient Description here</PDESCRIPTION>
+      <OSSTAT>0</OSSTAT>
+      <ASTAT>0</ASTAT>
+      <HALLSTAT>0</HALLSTAT>
+      <PHSTAT>0</PHSTAT>
+      <HUNSTAT>0</HUNSTAT>
+      <FSTAT>0</FSTAT>
+      <PICON>NONE</PICON>
+      <PMESH>NONE</PMESH>
+    </ItemData>
+    <ItemData PNAME="Patient Name">
+      <PDESCRIPTION>Patient Description here</PDESCRIPTION>
+      <OSSTAT>0</OSSTAT>
+      <ASTAT>0</ASTAT>
+      <HALLSTAT>0</HALLSTAT>
+      <PHSTAT>0</PHSTAT>
+      <HUNSTAT>0</HUNSTAT>
+      <FSTAT>0</FSTAT>
+      <PICON>NONE</PICON>
+      <PMESH>NONE</PMESH>
+    </ItemData>
+  </Items>
+</ItemCollection>

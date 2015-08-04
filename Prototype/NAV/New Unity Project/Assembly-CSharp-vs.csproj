@@ -74,7 +74,6 @@
      <Compile Include="Assets\Asylum\Scripts\Patients\PatientGenerator.cs" />
      <Compile Include="Assets\Asylum\Scripts\Patients\PatientStats.cs" />
      <Compile Include="Assets\Asylum\Scripts\Player\PlayerMovement.cs" />
-     <Compile Include="Assets\Asylum\Scripts\ToolScripts\CharacterHandler.cs" />
      <Compile Include="Assets\Asylum\Scripts\ToolScripts\Item.cs" />
      <Compile Include="Assets\Asylum\Scripts\ToolScripts\ItemContainer.cs" />
      <Compile Include="Assets\Asylum\Scripts\ToolScripts\ItemData.cs" />
@@ -89,6 +88,7 @@
      <Compile Include="Assets\Asylum\Sprites\Patient\Warp.cs" />
      <Compile Include="Assets\CharacterSelector.cs" />
      <Compile Include="Assets\EndOfDayScreenManager.cs" />
+     <Compile Include="Assets\ItemBuilder.cs" />
      <Compile Include="Assets\Patient3DCanvasManager.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -111,7 +111,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
-     <None Include="Assets\Editor\items.xml" />
+     <None Include="Assets\items.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Asylum\Resources\Tutorial.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
@@ -155,12 +155,10 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-     <None Include="Assets\Asylum\Resources\Goddess.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
-     <None Include="Assets\Asylum\Resources\InGame.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />

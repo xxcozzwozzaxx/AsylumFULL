@@ -77,6 +77,7 @@ public class Stat {
 [System.Serializable]
 public class PatientStats {
 	public Patient MyPatient;
+	public string Name;
 	public string Description;							// used to describe the patient in its profile
 	public TreatmentState MyTreatmentState = TreatmentState.None;
 	public BehaviourState currentState = BehaviourState.Passive;
