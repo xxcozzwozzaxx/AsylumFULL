@@ -43,52 +43,50 @@
 		[who] 1
 		Good, now if you go to your patients profile you’ll see his Physical Health has improved. 
 		To cure your patients you’ll need to send them to different therapies. 
-		Try sending one of your patients to a therapy by using the Treat button.
+		Try sending one of your patients to a therapy by using the Treat button.<EndTurnButton:secondIndex>
 		
 	<turn>id=50
 		[who] 1
 		[next] -1
 		Good, now if you go to your patients profile you’ll see his Physical Health has improved. 
 		To cure your patients you’ll need to send them to different therapies. 
-		Try sending one of your patients to a therapy by using the Treat button.<Main Camera:DrawArrowSix>
+		Try sending one of your patients to a therapy by using the Treat button.<Main Camera:DrawArrowSix><EndTurnButton:secondIndex>
 		
 	<turn>id=6
 		[who] 1
 		You can see how each treatment affects each patient inside their profile. Remember: every patient is different!
-		The patients need to be fed as well as sleep, send one to the cafeteria and one to sleep.
 		
 	<turn>id=60
 		[who] 1
 		[next] -1
-		You can see how each treatment affects each patient inside their profile. Remember: every patient is different!
-		The patients need to be fed as well as sleep, send one to the cafeteria and one to sleep.<Main Camera:DrawArrowSeven>
+		You can see how each treatment affects each patient inside their profile. Remember: every patient is different!<Main Camera:DrawArrowSeven>
 		
-	<turn>id=7
-		[who] 1
-		You can also restrain your patients as long as you have straitjackets in your inventory.
-	
-	<turn>id=70
-		[who] 1
-		[next] -1
-		You can also restrain your patients as long as you have straitjackets in your inventory.<Main Camera:DrawArrowEight>
-		
-	<turn>id=8
-		[who] 1
-		you have one left, restrain a patient by applying an item and see what happens..
-		
-	<turn>id=80
-		[who] 1
-		[next] -1
-		you have one left, restrain a patient by applying an item and see what happens..<Main Camera:DrawArrowNine>
-		
-	<turn>id=9
-		[who] 1
-		As you can see your staff have profiles too that show their hunger, fatigue and health. 
-		Send your guards on regular breaks to keep them nice and healthy.
-		
-	<turn>id=90
-		[who] 1
-		[next] -1
-		As you can see your staff have profiles too that show their hunger, fatigue and health. 
-		Send your guards on regular breaks to keep them nice and healthy.<Main Camera:DrawArrowTen>
+//	<turn>id=7
+//		[who] 1
+//		You can also restrain your patients as long as you have straitjackets in your inventory.
+//	
+//	<turn>id=70
+//		[who] 1
+//		[next] -1
+//		You can also restrain your patients as long as you have straitjackets in your inventory.<Main Camera:DrawArrowEight>
+//		
+//	<turn>id=8
+//		[who] 1
+//		you have one left, restrain a patient by applying an item and see what happens..
+//		
+//	<turn>id=80
+//		[who] 1
+//		[next] -1
+//		you have one left, restrain a patient by applying an item and see what happens..<Main Camera:DrawArrowNine>
+//		
+//	<turn>id=9
+//		[who] 1
+//		As you can see your staff have profiles too that show their hunger, fatigue and health. 
+//		Send your guards on regular breaks to keep them nice and healthy.
+//		
+//	<turn>id=90
+//		[who] 1
+//		[next] -1
+//		As you can see your staff have profiles too that show their hunger, fatigue and health. 
+//		Send your guards on regular breaks to keep them nice and healthy.<Main Camera:DrawArrowTen>
 			

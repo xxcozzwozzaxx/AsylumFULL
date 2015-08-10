@@ -1,5 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asylum\Scripts\Patients\Behaviour.cs">
     <Files>
       <File FileName="Assets\Asylum\Scripts\Patients\PatientStats.cs" Line="345" Column="14" />
@@ -11,6 +12,12 @@
       <File FileName="Assets\ItemBuilder.cs" Line="61" Column="35" />
       <File FileName="Assets\Asylum\Scripts\Management\PatientManager.cs" Line="84" Column="34" />
       <File FileName="Assets\Asylum\Scripts\Gui\IconPopup.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asylum\Scripts\Josscript\Scripts\setKey.cs">
+    <Files>
+      <File FileName="Assets\Asylum\Scripts\Josscript\Scripts\setKey.cs" Line="62" Column="16" />
+      <File FileName="Assets\Asylum\Resources\Tutorial.txt" Line="16" Column="10" />
+>>>>>>> 5556fa9f677f855d801f62ba85cd5204b83e9308
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
