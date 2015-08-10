@@ -26,7 +26,21 @@ public class Behaviour : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.Z)) {
+			Debug.LogError ("Making bot move");
+		//MyStats.increaseStat("Hallusinations", 2);
+			MoveToNewPositionCommand(transform.position + new Vector3(Random.Range(-5,5),0,Random.Range(-5,5)));
+		//MoveToRoom (0);
+		}
+		if (Input.GetKeyDown (KeyCode.X)) {
+			MyMovementState = MovementState.Wander;
+		}
+		if (MyMovementState == MovementState.Wander) {
+			Wander ();
+		}
 		UpdateMoveTo ();
+		for (int i = 0; i < agent.path.corners.Length-1; i++)
+			Debug.DrawLine(agent.path.corners[i], agent.path.corners[i+1], Color.red);		
 	}
 	public void PlayCrazySong() {
 		MyAudioSource.PlayOneShot (CrazyTune);
@@ -35,6 +49,14 @@ public class Behaviour : MonoBehaviour {
 	public void UpdateMoveTo() {
 		if (MyMovementState != MovementState.Waiting && MyMovementState != MovementState.Sleeping) {
 			agent.SetDestination (MoveToPosition);
+			if (agent.path.corners.Length >= 1) {
+				if (Vector3.Distance(transform.position, agent.path.corners[1]) > 0.2f) {
+					float PreviousRotationY = transform.eulerAngles.y;
+					transform.LookAt(agent.path.corners[1]);
+					//transform.eulerAngles = new Vector3(0f, Mathf.Lerp (PreviousRotationY, transform.eulerAngles.y+180f, Time.deltaTime*5f), 0f);
+					transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y+180f, 0f);
+				}
+			}
 			// if tpatient is near position, it will stop moving
 			if (MyMovementState == MovementState.MovingTo && Vector3.Distance(transform.position, MoveToPosition) < 1f) {
 				MyMovementState = MovementState.Waiting;
@@ -88,35 +110,39 @@ public class Behaviour : MonoBehaviour {
 	}
 	//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
 	public void IncreaseAggressionRadius() {
-		//GameObject[] colliders = Physics.SphereCast (MyPatient.transform.position, 5f);
-
 		float CheckRange = 5f;
 		Collider[] hitColliders = Physics.OverlapSphere (gameObject.transform.position, CheckRange);
 		for (int i = 0; i < hitColliders.Length; i++) {
 			Patient NearByCharacter = hitColliders [i].gameObject.GetComponent<Patient>();
-			if (MyPatient != null) {
-
+			if (NearByCharacter != null) {
+				NearByCharacter.MyStats.increaseStat ("Aggression", 1);	// adds 1 aggression to nearby characters
 			}
 		}
 	}
-	
+	IconPopup MyIconPopup;
 	//warning stage: fast movement, create icon above head
 	public void WarningHallucination() {
-		
+		agent.speed = 4f;
+		//MyIconPopup.ChangeState
 	}
 	
 	//self harm stage: affect own stat, Physical Health - 2 per turn
 	public void InflictSelfHarm() {
-		
+		StopMoving ();
+		MyPatient.MyStats.increaseStat ("PhysicalHealth", -2);
 	}
-	
+
+	public void RestoreMovement() {
+		agent.speed = 2f;
+	}
 	//slow movement
 	public void SlowMovement() {
-		
+		agent.speed = 0.85f;
 	}
 	
 	// No movement
-	public void Stop() {
+	public void StopMoving() {
+		agent.speed = 0f;
 		AlterMoving (false);
 	}
 	public void AlterMoving(bool IsMovement) {

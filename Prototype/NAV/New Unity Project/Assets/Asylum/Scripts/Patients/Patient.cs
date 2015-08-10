@@ -6,6 +6,7 @@ using System.Collections.Generic;
 // patient to move to room
 public enum MovementState {
 	Waiting,
+	Wander,
 	Crazy,
 	MovingTo,
 	Patrol,
@@ -34,10 +35,5 @@ public class Patient : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		//if (Input.GetKeyDown (KeyCode.Z)) {
-			//MyStats.increaseStat("Hallusinations", 2);
-			//MoveToNewPosition(transform.position + new Vector3(Random.Range(-5,5),0,Random.Range(-5,5)));
-			//MoveToRoom (0);
-		//}
 	}
 }

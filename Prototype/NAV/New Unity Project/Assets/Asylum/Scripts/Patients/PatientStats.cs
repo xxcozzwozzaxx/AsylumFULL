@@ -341,7 +341,9 @@ public class PatientStats {
 
 	public void ChangeStates()
 	{
-		if (MyPatient.gameObject.name != "PatientManager") 
+		if (MyPatient == null)
+						return;
+		if (MyPatient.gameObject.name != "PatientManager")
 		{
 			Debug.Log (currentState);
 			switch (currentState) 
