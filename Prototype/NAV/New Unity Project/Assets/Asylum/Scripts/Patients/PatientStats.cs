@@ -330,6 +330,7 @@ public class PatientStats {
 		}
 	}
 
+
 	public void ChangeStates()
 	{
 		Debug.Log (currentState);
@@ -398,8 +399,5 @@ public class PatientStats {
 			//dead
 			break;
 		}
-
-
-
 	}
 };
