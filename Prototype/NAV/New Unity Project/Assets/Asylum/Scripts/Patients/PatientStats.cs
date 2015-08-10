@@ -350,70 +350,64 @@ public class PatientStats {
 
 				//animation
 
-				break;
+					break;
 				case BehaviourState.Passive:
-//
-//				Sprite tempImg = new Sprite ();
-//				foreach (Sprite sp in gen.SpriteList.ToArray())
-//				{
-//					if (sp.name == "h1")
-//					PATIENTIMAGE.overrideSprite = sp;
-//				}
+
 			//wandering
 			
-				break;
-						case BehaviourState.MediumAggressive:
-								//MyPatient.GoCrazy ();
+					break;
+				case BehaviourState.MediumAggressive:
 			//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
 
-								break;
-						case BehaviourState.HighAggression:
+					break;
+				case BehaviourState.HighAggression:
 			//Patient attack the closest target, target's physical health -2 per turn
 
-								break;
-						case BehaviourState.WarningHallucinating:
+					break;
+				case BehaviourState.WarningHallucinating:
 			//warning stage: fast movement, create icon above head
 			
 			
-								break;
-						case BehaviourState.SelfHarmHallusinating:
+					break;
+				case BehaviourState.SelfHarmHallusinating:
 			//self harm stage: affect own stat, Physical Health - 2 per turn
 			
 			
-								break;
-						case BehaviourState.Tired:
+					break;
+				case BehaviourState.Tired:
 			//slow movement
 			
-								break;
-						case BehaviourState.Sleeping:
+					break;
+				case BehaviourState.Sleeping:
 			
 			//sleeping animation
 			
-								break;
-						case BehaviourState.Hungry:
+					break;
+				case BehaviourState.Hungry:
 			//slow movement
 			//icon
 
-								break;
-						case BehaviourState.Eating:
+					break;
+				case BehaviourState.Eating:
 			
 			//icon
 			//animation
-								break;
-						case BehaviourState.InTherapy:
+					break;
+				case BehaviourState.InTherapy:
 			
 			//icon
 			
-								break;
-						case BehaviourState.Dying:
+					break;
+				case BehaviourState.Dying:
 			
 			//slow movement, icon
 			
-								break;
-						case BehaviourState.Dead:
+					break;
+				case BehaviourState.Dead:
 
 			//dead
-								break;
+					break;
+			
 			}
 
 
