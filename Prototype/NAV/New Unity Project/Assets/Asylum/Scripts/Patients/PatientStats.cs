@@ -82,6 +82,10 @@ public class PatientStats {
 	public TreatmentState MyTreatmentState = TreatmentState.None;
 	public BehaviourState currentState = BehaviourState.Passive;
 	public List<Stat> theStats = new List<Stat>();		// a list of its stats, designed for dynamic stats as opposed to static
+	public Sprite OtherSprite;
+	public Image PATIENTIMAGE;
+	public PatientGenerator gen;
+	public GameObject thePatient;
 
 	public PatientStats()
 	{
@@ -150,15 +154,6 @@ public class PatientStats {
 		TreatmentsTurn ();
 		StatsTurn (TurnsPassed);
 		//setStat ("Hunger", Mathf.Clamp (getStat("Hunger").Amount, 1, 20));
-
-		ChangeStatsToAIStates ();
-	}
-
-	public void ChangeStatsToAIStates() {
-		if (getStat("Hallusinations").Amount >= 16) {
-			MyPatient.MyMovementState = MovementState.Crazy;
-			MyPatient.PlayCrazySong();
-		}
 	}
 
 	public void TreatmentsTurn() {
@@ -303,101 +298,130 @@ public class PatientStats {
 		//setting states
 		if (getStat ("Aggression").Amount  > 5) {
 			
-			//SetCurrentState (State.Aggressive);
-		} else	
-		{
-			//RemoveState (State.Aggressive);
-		}		
+			SetCurrentState (BehaviourState.MediumAggressive);
+
+		}
+		if (getStat ("Aggression").Amount  > 8) {
+			
+			SetCurrentState (BehaviourState.HighAggression);
+			
+		} 
 		if(getStat ("Hallucinations").Amount  > 5)
 		{
-			//SetCurrentState (State.Hallucinating);
+			
+//			MyPatient.MyMovementState = MovementState.Crazy;
+//			MyPatient.PlayCrazySong();
+			SetCurrentState (BehaviourState.WarningHallucinating);
+		}
+		if(getStat ("Hallucinations").Amount  > 8)
+		{
+			
+//			MyPatient.MyMovementState = MovementState.Crazy;
+//			MyPatient.PlayCrazySong();
+			SetCurrentState (BehaviourState.SelfHarmHallusinating);
 		}
 		if (getStat ("PhysicalHealth").Amount  < 4)
 		{
-			//SetCurrentState (State.Dying);
+			SetCurrentState (BehaviourState.Dying);
 		}
 		if(getStat ("Hunger").Amount  > 5)
 		{
-			//SetCurrentState (State.Hungry);
+			SetCurrentState (BehaviourState.Hungry);
 		}
 		if(getStat ("Fatigue").Amount  > 5)
 		{
-			//SetCurrentState (State.Tired);
+			SetCurrentState (BehaviourState.Tired);
 		}
-		if(getStat ("PhysicalHealth").Amount  == 0)
+		if(getStat ("PhysicalHealth").Amount  <= 0)
 		{
-			//SetCurrentState (State.Dead);
+			SetCurrentState (BehaviourState.Dead);
 		}
 	}
 
 
 	public void ChangeStates()
 	{
-		Debug.Log (currentState);
-		switch (currentState) 
+		if (MyPatient.gameObject.name != "PatientManager") 
 		{
-		case BehaviourState.MoveTo:
+			Debug.Log (currentState);
+			switch (currentState) 
+			{
+				case BehaviourState.MoveTo:
 
-			//animation
+				//animation
 
-			break;
-		case BehaviourState.Passive:
-			
+				break;
+				case BehaviourState.Passive:
+//
+//				Sprite tempImg = new Sprite ();
+//				foreach (Sprite sp in gen.SpriteList.ToArray())
+//				{
+//					if (sp.name == "h1")
+//					PATIENTIMAGE.overrideSprite = sp;
+//				}
 			//wandering
 			
-			break;
-		case BehaviourState.MediumAggressive:
-			MyPatient.GoCrazy();
+				break;
+						case BehaviourState.MediumAggressive:
+								MyPatient.GoCrazy ();
 			//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
 
-			break;
-		case BehaviourState.HighAggression:
+								break;
+						case BehaviourState.HighAggression:
 			//Patient attack the closest target, target's physical health -2 per turn
 
-			break;
-		case BehaviourState.WarningHallucinating:
+								break;
+						case BehaviourState.WarningHallucinating:
 			//warning stage: fast movement, create icon above head
 			
 			
-			break;
-		case BehaviourState.SelfHarmHallusinating:
+								break;
+						case BehaviourState.SelfHarmHallusinating:
 			//self harm stage: affect own stat, Physical Health - 2 per turn
 			
 			
-			break;
-		case BehaviourState.Tired:
+								break;
+						case BehaviourState.Tired:
 			//slow movement
 			
-			break;
-		case BehaviourState.Sleeping:
+								break;
+						case BehaviourState.Sleeping:
 			
 			//sleeping animation
 			
-			break;
-		case BehaviourState.Hungry:
+								break;
+						case BehaviourState.Hungry:
 			//slow movement
 			//icon
 
-			break;
-		case BehaviourState.Eating:
+								break;
+						case BehaviourState.Eating:
 			
 			//icon
 			//animation
-			break;
-		case BehaviourState.InTherapy:
+								break;
+						case BehaviourState.InTherapy:
 			
 			//icon
 			
-			break;
-		case BehaviourState.Dying:
+								break;
+						case BehaviourState.Dying:
 			
 			//slow movement, icon
 			
-			break;
-		case BehaviourState.Dead:
+								break;
+						case BehaviourState.Dead:
 
 			//dead
+<<<<<<< HEAD
 			break;
 		}
+=======
+								break;
+						}
+
+
+				}
+>>>>>>> b0b580941b722a8a140d744ec195344c970cf781
 	}
 };

@@ -9,6 +9,7 @@ public class PatientGenerator : MonoBehaviour {
 	public List<string> PossibleNames = new List<string>();
 	public List<string> Descriptions = new List<string>();
 	public List<PatientStats> MyStatsPresets = new List<PatientStats>();
+	//public List<Sprite> SpriteList = new List<Sprite>();
 	public PatientStats DefaultStats;
 	// Use this for initialization
 	void Start () {

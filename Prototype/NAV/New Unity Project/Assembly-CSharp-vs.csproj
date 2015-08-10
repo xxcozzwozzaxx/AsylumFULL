@@ -55,8 +55,10 @@
      <Compile Include="Assets\Asylum\Scripts\Gui\IconPopup.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\InventoryManager.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\ItemHandler.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Gui\LoadGame.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\NewBehaviourScript.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\PatientGuiManager.cs" />
+     <Compile Include="Assets\Asylum\Scripts\Gui\Quit.cs" />
      <Compile Include="Assets\Asylum\Scripts\Gui\UpdateTime.cs" />
      <Compile Include="Assets\Asylum\Scripts\Josscript\Core\DlgManager.cs" />
      <Compile Include="Assets\Asylum\Scripts\Josscript\Core\Josscript.cs" />
