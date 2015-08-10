@@ -59,7 +59,7 @@ public class FSM : MonoBehaviour
 			
 			break;
 		case State.Aggressive:
-			MyPatient.GoCrazy();
+			//MyPatient.GoCrazy();
 
 			break;
 		case State.Hallucinating:

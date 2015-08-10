@@ -85,7 +85,7 @@ public class TurnManager : MonoBehaviour {
 		//Debug.LogError (Bot.name + "'s Moving PatientToRoom: " + RoomIndex);
 		for (int i = 0; i < MyRooms.Count; i++) {
 			if (MyRooms [i].GetComponent<Room>().RoomIndex == RoomIndex) {
-				Bot.GetComponent<Patient>().MoveToNewPositionCommand (MyRooms [i].gameObject.transform.position);
+				Bot.GetComponent<Behaviour>().MoveToNewPositionCommand (MyRooms [i].gameObject.transform.position);
 				Bot.GetComponent<Patient>().MyStats.MyTreatmentState = MyRooms [i].MyTreatmentState;
 				i = MyRooms.Count;
 			}

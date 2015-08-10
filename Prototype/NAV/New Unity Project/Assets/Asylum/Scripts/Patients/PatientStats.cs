@@ -363,7 +363,7 @@ public class PatientStats {
 			
 				break;
 						case BehaviourState.MediumAggressive:
-								MyPatient.GoCrazy ();
+								//MyPatient.GoCrazy ();
 			//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
 
 								break;
@@ -413,15 +413,11 @@ public class PatientStats {
 						case BehaviourState.Dead:
 
 			//dead
-<<<<<<< HEAD
-			break;
-		}
-=======
 								break;
-						}
+			}
 
 
-				}
->>>>>>> b0b580941b722a8a140d744ec195344c970cf781
+
+		}
 	}
 };

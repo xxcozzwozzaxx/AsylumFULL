@@ -74,7 +74,7 @@ public class Behaviour : MonoBehaviour {
 		for (int i = 0; i < hitColliders.Length; i++) 
 		{
 			Patient NearByCharacter = hitColliders [i].gameObject.GetComponent<Patient>();
-			float ThisDistance = Vector3.Distance(transform.position, hitColliders[i].gameObject);
+			float ThisDistance = Vector3.Distance(transform.position, hitColliders[i].gameObject.transform.position);
 			if (NearByCharacter != null) 
 			if (ThisDistance < MyClosestDistance) {
 				ClosestIndex = i;
@@ -89,7 +89,8 @@ public class Behaviour : MonoBehaviour {
 	//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
 	public void IncreaseAggressionRadius() {
 		//GameObject[] colliders = Physics.SphereCast (MyPatient.transform.position, 5f);
-		
+
+		float CheckRange = 5f;
 		Collider[] hitColliders = Physics.OverlapSphere (gameObject.transform.position, CheckRange);
 		for (int i = 0; i < hitColliders.Length; i++) {
 			Patient NearByCharacter = hitColliders [i].gameObject.GetComponent<Patient>();
