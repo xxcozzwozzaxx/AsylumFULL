@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -99,8 +100,9 @@ public class FSM : MonoBehaviour
 			
 			break;
 		case State.Dead:
-			
-			
+
+
+
 			break;
 		}
 

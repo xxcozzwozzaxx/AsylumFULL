@@ -1,16 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Michael\Documents\GitHub\AsylumFULL\Prototype\NAV\New Unity Project\Assets\Asylum\Scripts\Josscript\Core\DlgManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asylum\Scripts\Patients\Patient.cs">
     <Files>
-      <File FileName="Assets\Asylum\Scripts\ToolScripts\Item.cs" Line="1" Column="1" />
-      <File FileName="Assets\Asylum\Scripts\ToolScripts\ItemContainer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Asylum\Scripts\ToolScripts\ItemData.cs" Line="1" Column="1" />
-      <File FileName="Assets\items.xml" Line="38" Column="18" />
-      <File FileName="Assets\ItemBuilder.cs" Line="69" Column="4" />
       <File FileName="Assets\Asylum\Scripts\Management\PatientManager.cs" Line="93" Column="28" />
-      <File FileName="Assets\Asylum\Scripts\Patients\PatientStats.cs" Line="89" Column="3" />
+      <File FileName="Assets\Asylum\Scripts\Patients\PatientStats.cs" Line="353" Column="33" />
       <File FileName="c:\Users\Michael\Documents\GitHub\AsylumFULL\Prototype\NAV\New Unity Project\Assets\Asylum\Scripts\Josscript\Core\DlgManager.cs" Line="211" Column="42" />
-      <File FileName="Assets\Asylum\Scripts\Patients\PatientGenerator.cs" Line="21" Column="18" />
+      <File FileName="Assets\Asylum\Scripts\Patients\PatientGenerator.cs" Line="12" Column="4" />
+      <File FileName="Assets\Asylum\Scripts\Gui\IconPopup.cs" Line="14" Column="3" />
+      <File FileName="Assets\Asylum\Scripts\Patients\Patient.cs" Line="36" Column="3" />
+      <File FileName="Assets\Asylum\Scripts\Management\TurnManager.cs" Line="207" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

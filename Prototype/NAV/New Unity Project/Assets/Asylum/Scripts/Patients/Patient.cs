@@ -33,6 +33,7 @@ public class Patient : MonoBehaviour {
 	void Start () 
 	{
 		MyStats.MyPatient = (this);
+
 		agent = GetComponent<NavMeshAgent> ();
 		//OrigX = transform.position.z;
 		MyTurnManager = GetManager.GetTurnManager ();

@@ -17,7 +17,6 @@ public class IconPopup : MonoBehaviour {
 
 		//OtherScript otherScript = GetComponent<PatientStats>();
 		//transform.GetChild (3).gameObject.transform.LookAt (Camera.main.transform.position);
-		Debug.Log (timeLeft);
 		if (transform.GetChild (3).gameObject.activeSelf == false && timeLeft != 0f) 
 		{
 			transform.GetChild (3).gameObject.SetActive (true);
@@ -28,9 +27,19 @@ public class IconPopup : MonoBehaviour {
 		{
 			transform.GetChild (3).gameObject.SetActive (false);
 		}
-	}	
+	}
 
-	/*void statePic()
+	/*public void statePic()
 	{
+		if (transform.GetChild (3).gameObject.activeSelf == false) 
+		{
+			transform.GetChild (3).gameObject.SetActive (true);
+			//transform.GetChild (3).gameObject.SetActive (!transform.GetChild (3).gameObject.activeSelf);
+		}
+
+		if (transform.GetChild (3).gameObject.activeSelf == true) 
+		{
+			transform.GetChild (3).gameObject.SetActive (false);
+		}
 	}*/
 }
