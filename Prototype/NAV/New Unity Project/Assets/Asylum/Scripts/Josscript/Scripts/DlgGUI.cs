@@ -65,8 +65,8 @@ public class DlgGUI : DlgManager
 		if (WhoIsSpeakingID != 0)
 		{
 			//avatarRect	= new Rect(005, 05, 180, 220);
-			textBGRect	= new Rect(200, 05f, Screen.width-1000, 90f);//200, 110
-			textPos		= new Rect(200, 15f, Screen.width-1000, 90f);//230, 125
+			textBGRect	= new Rect(Screen.width/11f, Screen.height/50f, Screen.width/3f, 9*Screen.height/50f);//200, 110
+			textPos		= new Rect(Screen.width/11f, 2f*Screen.height/50f, Screen.width/3f, 9*Screen.height/50f);//230, 125
 		
 			textBackground	= textBGTop;
 			//avatarBG		= avatarBGTop;
