@@ -77,14 +77,15 @@ public class Stat {
 [System.Serializable]
 public class PatientStats {
 	public Patient MyPatient;
-	public Patient patient;
 	public string Name;
 	public string Description;							// used to describe the patient in its profile
 	public TreatmentState MyTreatmentState = TreatmentState.None;
 	public BehaviourState currentState = BehaviourState.Passive;
 	public List<Stat> theStats = new List<Stat>();		// a list of its stats, designed for dynamic stats as opposed to static
-//	public Sprite OtherSprite;
-//	public Image image;
+	public Sprite OtherSprite;
+	public Image PATIENTIMAGE;
+	public PatientGenerator gen;
+	public GameObject thePatient;
 
 	public PatientStats()
 	{
@@ -350,60 +351,60 @@ public class PatientStats {
 
 				break;
 			case BehaviourState.Passive:
-			patient.changeStateImage(currentState);
-			//wandering
+
+		//wandering
 		
 				break;
 			case BehaviourState.MediumAggressive:
-			//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
+		//Create a radius around patient, for other patients within the radius: Aggression +1 per turn
 
 				break;
 			case BehaviourState.HighAggression:
-			//Patient attack the closest target, target's physical health -2 per turn
+		//Patient attack the closest target, target's physical health -2 per turn
 
 				break;
 			case BehaviourState.WarningHallucinating:
-			//warning stage: fast movement, create icon above head
+		//warning stage: fast movement, create icon above head
 		
 		
 				break;
 			case BehaviourState.SelfHarmHallusinating:
-			//self harm stage: affect own stat, Physical Health - 2 per turn
+		//self harm stage: affect own stat, Physical Health - 2 per turn
 		
 		
 				break;
 			case BehaviourState.Tired:
-			//slow movement
+		//slow movement
 		
 				break;
 			case BehaviourState.Sleeping:
 		
-			//sleeping animation
+		//sleeping animation
 		
 				break;
 			case BehaviourState.Hungry:
-			//slow movement
-			//icon
+		//slow movement
+		//icon
 
 				break;
 			case BehaviourState.Eating:
 		
-			//icon
-			//animation
+		//icon
+		//animation
 				break;
 			case BehaviourState.InTherapy:
 		
-			//icon
+		//icon
 		
 				break;
 			case BehaviourState.Dying:
 		
-			//slow movement, icon
+		//slow movement, icon
 		
 				break;
 			case BehaviourState.Dead:
 
-			//dead
+		//dead
 				break;
 
 		}
