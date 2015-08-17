@@ -48,6 +48,39 @@ public class InventoryManager : MonoBehaviour {
 			MyItems[SelectedItemIndex].GetComponent<RawImage>().color = new Color32(255,255,255,255);
 			SelectedItemIndex = PossibleSelectIndex;
 			MyItems[SelectedItemIndex].GetComponent<RawImage>().color = new Color32(255,55,55,255);
+			
+			if (MyItemDatas[SelectedItemIndex].Amount > 0) {
+				MyItemDatas[SelectedItemIndex].Amount--;
+			switch(MyItemDatas[SelectedItemIndex].Name) 
+			{
+
+			case("Antibiotics"):
+				GetManager.GetTurnManager().PreviousSelectedPatient.GetComponent<Patient>().MyStats.increaseStat("PhysicalHealth",2);
+
+				break;
+			case("Notdrugs"):
+
+				GetManager.GetTurnManager().PreviousSelectedPatient.GetComponent<Patient>().MyStats.increaseStat("Hallucinations",-2);
+
+				break;
+			case("Lithium"):
+
+				GetManager.GetTurnManager().PreviousSelectedPatient.GetComponent<Patient>().MyStats.increaseStat("Aggression",-4);
+				GetManager.GetTurnManager().PreviousSelectedPatient.GetComponent<Patient>().MyStats.increaseStat("Fatigue",-2);
+
+				break;
+			case("StraitJackets"):
+
+				GetManager.GetTurnManager().PreviousSelectedPatient.GetComponent<Patient>().MyStats.increaseStat("Aggression",-2);
+
+				break;
+			case("Candy"):
+
+				GetManager.GetTurnManager().PreviousSelectedPatient.GetComponent<Patient>().MyStats.increaseStat("Hunger",-4);
+
+				break;
+				}
+			}
 		}
 	}
 

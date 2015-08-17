@@ -1,10 +1,18 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\TestGraphics\Assets\Scripts\Voxels\MyMesh.cs">
     <Files>
       <File FileName="..\..\..\..\TestGraphics\Assets\Scripts\Voxels\MyMesh.cs" Line="14" Column="3" />
       <File FileName="..\..\..\..\TestGraphics\Assets\Scripts\Voxels\TerrainGenerator.cs" Line="9" Column="1" />
       <File FileName="..\..\..\..\TestGraphics\Assets\Scripts\Data\DataManager.cs" Line="82" Column="45" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asylum\Scripts\Patients\PatientStats.cs">
+    <Files>
+      <File FileName="Assets\Asylum\Scripts\Patients\PatientStats.cs" Line="352" Column="32" />
+      <File FileName="Assets\Asylum\Scripts\Patients\Patient.cs" Line="111" Column="3" />
+>>>>>>> 0fd4919b3d819ac0102bc671438fbd1c18c20aff
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

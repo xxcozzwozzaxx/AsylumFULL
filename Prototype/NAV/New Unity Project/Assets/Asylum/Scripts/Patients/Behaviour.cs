@@ -49,7 +49,7 @@ public class Behaviour : MonoBehaviour {
 	public void UpdateMoveTo() {
 		if (MyMovementState != MovementState.Waiting && MyMovementState != MovementState.Sleeping) {
 			agent.SetDestination (MoveToPosition);
-			if (agent.path.corners.Length >= 1) {
+			if (agent.path.corners.Length >= 2) {
 				if (Vector3.Distance(transform.position, agent.path.corners[1]) > 0.2f) {
 					float PreviousRotationY = transform.eulerAngles.y;
 					transform.LookAt(agent.path.corners[1]);

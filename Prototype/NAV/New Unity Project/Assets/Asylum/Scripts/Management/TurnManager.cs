@@ -45,6 +45,7 @@ public class TurnManager : MonoBehaviour {
 
 	public bool IsPatientSelected = false;
 	public GameObject SelectedPatient;
+	public GameObject PreviousSelectedPatient;
 	public GameObject MyPatientGui;
 	public PatientGuiManager MyPatientGuiManager;
 
@@ -192,7 +193,10 @@ public class TurnManager : MonoBehaviour {
 		if (NewSelectedPatient && MyPatientGui) 
 		if (!NewSelectedPatient.GetComponent<CharacterSelector>().HasBeenOrdered) {
 			NewSelectedPatient.GetComponent<CharacterSelector>().IsSelected = true;
+			PreviousSelectedPatient = SelectedPatient;
 			SelectedPatient = NewSelectedPatient;
+			if (PreviousSelectedPatient == null)
+				PreviousSelectedPatient = SelectedPatient;
 			Patient MyPatient = SelectedPatient.GetComponent<Patient>();
 			MyPatientGui.SetActive (true);
 			MyPatientGui.GetComponent<Patient3DCanvasManager>().MyPatient = SelectedPatient;
@@ -204,7 +208,10 @@ public class TurnManager : MonoBehaviour {
 			MyPatientGuiManager.GetComponent<PatientGuiManager> ().UpdatePatient (SelectedPatient);
 			IsPatientSelected = true;
 		}
-		OnSelectPatientFunction.Invoke ();
+		if (OnSelectPatientFunction != null) 
+		{
+			OnSelectPatientFunction.Invoke ();
+		}
 		//UnSelectGuard();
 	}
 	public void UnSelectPatient () 
@@ -212,6 +219,8 @@ public class TurnManager : MonoBehaviour {
 		if (SelectedPatient)
 			SelectedPatient.GetComponent<CharacterSelector>().IsSelected = false;
 		IsPatientSelected = false;
+		if (PreviousSelectedPatient != null)
+			PreviousSelectedPatient = SelectedPatient;
 		SelectedPatient = null;	// set targetted patient to nothing
 		MyPatientGui.SetActive (false);
 	}
